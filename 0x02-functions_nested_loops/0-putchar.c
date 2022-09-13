@@ -1,20 +1,22 @@
-#include "_putchar.h"
+#include "main.h"
 
 /**
- *main - prints _putchar, followed by a new line
- *Return: 0
+ * main - prints the word _putchar
+ *
+ * Return: 0 on success execution.
  */
+
 int main(void)
 {
-_putchar("_");
-_putchar("p");
-_putchar("u");
-_putchar("t");
-_putchar("c");
-_putchar("h");
-_putchar("a");
-_putchar("r");
-_putchar("\n");
+	char s[] = "_putchar";
+	int i = 0;
 
-return (0);
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar(10);
+
+	return (0);
 }
