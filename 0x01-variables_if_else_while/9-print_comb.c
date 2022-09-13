@@ -2,25 +2,21 @@
 
 /**
  *main - prints the numbers from 00 to 99
- *Return: Always 0 (Success)
+ *Return: Always 0
  */
 int main(void)
 {
-	int n, m;
+int i;
 
-	for (n = 48; n <= 57; n++)
-	{
-		for (m = 48; m<= 57; m++)
-		{
-			putchar(n);
-			putchar(m);
-			if (n != 57 || m != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar("\n");
-	return (0);
+for (i = 48; i < 58; i++)
+{
+putchar(i);
+if (i != 57)
+{	
+putchar(',');
+putchar(' ');
+}
+}
+putchar('\n');
+return (0);
 }
