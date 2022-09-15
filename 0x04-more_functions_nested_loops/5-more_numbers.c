@@ -11,6 +11,7 @@ void more_numbers(void)
 	while (i < 10)
 	{
 		a = 0;
+
 		while (a < 15)
 		{
 			b = a;
