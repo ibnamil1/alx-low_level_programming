@@ -8,21 +8,20 @@
  */
 void print_number(int n)
 {
-	unsigned int un = 0;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		if (n < 1000000000)
-		{
-			n = -n
-		}
-		un = n;
-		_putchar(45);
-		num_to_char(n);
+		n1 = -n;
+		_putchar('-');
 	}
 	else
 	{
-		un = n;
-		num_to_char(un);
+		n1 = n;
 	}
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 }
