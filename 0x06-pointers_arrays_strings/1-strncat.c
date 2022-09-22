@@ -8,7 +8,7 @@
  * @n: number of chars to include from appended string
  * Return: char pointer
  */
-ar *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;
 	char *p;
