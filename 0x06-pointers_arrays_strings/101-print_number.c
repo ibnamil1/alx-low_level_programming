@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_number - function to print int using _putchar
  * @num: int to print
