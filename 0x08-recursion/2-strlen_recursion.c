@@ -5,11 +5,11 @@
  * @s: string to calculate the length of
  * Return: length of string
  */
-int strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (*s == '\n')
 	{
 		return (0);
 	}
-	return (1 +_strlen_recursion(s + 1));
+	return (1 + _strlen_recursion(s + 1));
 }
