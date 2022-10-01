@@ -20,4 +20,4 @@ int main(int argc, char *argv[])
 	m2 = atoi(argv[2]);
 	printf("%d\n", m1 * m2);
 	return (0);
-}`
+}
