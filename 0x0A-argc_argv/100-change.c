@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
 	printf("%d\n", count);
 	return (0);
 }
+
 /**
  * coin_count - counts the min coins needed for change
  * @count: int to count coins
