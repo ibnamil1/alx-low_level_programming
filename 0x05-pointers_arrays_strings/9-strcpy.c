@@ -1,19 +1,17 @@
+#include "main.h"
+
 /**
- * *_strcpy - copies string to given memory location
- * @dest: where the string needs to be copied
- * @src: where the string is
- * Return: char
+ * _strlen - return the length of a given string
+ * @s: pointer to string to work on
+ * Return: string
  */
-char *_strcpy(char *dest, char *src)
+int _strlen(char *s)
 {
 	int len = 0;
 
-	while (*(src + len) != '\0')
+	while (*(s + len) != '\0')
 	{
-		*(dest + len) = *(src + len);
 		len++;
 	}
-	*(dest + len) = *(src + len);
-
-	return (dest);
+	return (len);
 }
